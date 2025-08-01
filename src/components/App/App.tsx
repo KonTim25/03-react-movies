@@ -8,6 +8,7 @@ import MovieModal from '../MovieModal/MovieModal.tsx';
 import { type Movie } from '../../types/movie.ts';
 import toast, { Toaster } from 'react-hot-toast';
 import './App.module.css';
+// import '../../index.css';
 
 
 export default function App() {
