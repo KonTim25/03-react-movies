@@ -10,7 +10,7 @@ interface MovieGridProps {
 export default function MovieGrid({ onSelect, movies }: MovieGridProps) {
     return (
         <ul className={css.grid}>
-            {movies.length > 0 ? (
+            {movies.length > 0 && (
                 movies.map(movie => (
                     <li key={movie.id} onClick={() => onSelect(movie)}>
                         <div className={css.card}>
@@ -24,10 +24,6 @@ export default function MovieGrid({ onSelect, movies }: MovieGridProps) {
                         </div>
                     </li>
                 ))
-            ) : (
-                <li>
-                    <p>No movies found.</p>
-                </li>
             )}
         </ul>
     );
