@@ -11,7 +11,6 @@ export const fetchMovies = async (query: string): Promise<Movie[]> => {
     const { data } = await axios.get<resultsMovie>(API_URL, {
         params: {
             query,
-            api_key: import.meta.env.VITE_TMDB_TOKEN,
         },
         headers: {
             accept: 'application/json',
